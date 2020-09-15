@@ -1,5 +1,6 @@
 body {
   margin-top: 30px;
+  padding: 15px;
 }
 
 .p-absolute {
@@ -23,7 +24,7 @@ img {
 }
 
 .div-img {
-  padding: 5px;
+  padding: 0 5px 10px 5px;
   position: absolute;
   background-color: rgba(255, 255, 255, 0.9);
   left: 0;
@@ -62,14 +63,75 @@ img {
   border: none;
 }
 
-.card-hr {
-  border: 3px solid;
-  margin-top: -4px;
-  margin-bottom: 5px;
+.card-right {
+}
+
+.col-gap-10 {
+  column-gap: 10px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.b-top-4 {
+  border-top: 4px solid #d9d9d9;
+}
+
+.b-bottom-4 {
+  border-bottom: 4px solid #d9d9d9;
+}
+
+.card-right-item1 {
+  padding-top: 10px;
+  padding-bottom: 4px;
+}
+
+.card-right-pic img {
+  width: 63px;
+}
+
+.card-right-text a {
+  font: bold 17px/21px "Roboto Condensed", sans-serif;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.card-right-text2 {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin-top: 4px;
+  color: black;
+}
+
+.card-right-text2 span {
+  font-weight: normal;
+  color: #555;
+}
+
+.card-right-sub-text {
+  font-size: 14px;
+  font-weight: 770;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin-top: 4px;
+  color: #555;
+}
+
+.space-between {
+  justify-content: space-between;
 }
 
 .right-stories {
   border-bottom: 1px solid gray;
+}
+
+.first-title {
+  font: bold 16px/16px "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 2px;
+  color: rgba(3, 3, 3, 0.4);
 }
 
 .right-stories h6,
@@ -108,17 +170,6 @@ img {
   z-index: 1;
 }
 
-/* .vs-top {
-  border-bottom: 1px solid chocolate;
-  margin-bottom: 1px;
-  padding-bottom: 20px;
-}
-
-.vs-bottom {
-  border-top: 1px solid blue;
-  padding-top: 20px;
-} */
-
 .vs-top {
   padding-bottom: 20px;
 }
@@ -141,4 +192,29 @@ img {
   font-size: 0.8rem;
   color: gray;
   font-weight: 700;
+}
+
+.padding-l-b-r-20 {
+  padding: 0 20px 20px 20px;
+}
+
+.s-color {
+  color: #036cbd;
+}
+
+.margin-top-5 {
+  margin-top: 5px;
+}
+
+.p-bg-c {
+  background-color: #f72210;
+}
+
+.c-white {
+  color: #fff;
+  font-weight: 700;
+}
+
+.btn:hover {
+  color: #fff;
 }
