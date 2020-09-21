@@ -1,11 +1,83 @@
 body {
-  margin-top: 30px;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f4f5f6;
 }
 
+img {
+  width: 100%;
+}
+
+header {
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+
+/* ==========================================================
+
+NAVIGATION BAR SECTION
+
+=========================================================== */
+
+.first-nav {
+  z-index: 2;
+  height: 55px;
+  padding: 0 10px 0 0;
+}
+
+.nav-bg {
+  background-color: #f72210;
+}
+
+.btn-f-l {
+  font-size: 11px;
+  line-height: 20px;
+  font-weight: 700;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.fa-bars,
+.fa-user {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.nav-middle img {
+  width: 150px;
+  align-self: center;
+  align-items: center;
+}
+
+.second-nav .navbar-nav li .navbar-links-one {
+  color: #000;
+  border-right: 1px solid #666;
+  line-height: 5px;
+  font-weight: 700;
+  padding: 8px;
+}
+
+.third-nav .navbar-nav li .navbar-links-two {
+  line-height: 5px;
+  color: #666;
+  font-weight: 700;
+  padding: 8px;
+  margin-left: 5px;
+  text-transform: uppercase;
+}
+
+.second-nav a.nav-link:hover,
+.third-nav a.nav-link:hover {
+  color: #f72210;
+}
+
 .row {
   margin: 0;
+}
+
+.nav-icons-left {
+  font-size: 13.5px;
 }
 
 .p-absolute {
@@ -14,10 +86,6 @@ body {
 
 .p-relative {
   position: relative;
-}
-
-img {
-  width: 100%;
 }
 
 .font-12 {
@@ -32,13 +100,6 @@ img {
   background-color: white;
 }
 
-.sticky-content {
-  position: sticky;
-  left: 0;
-  bottom: 0;
-  align-self: flex-end;
-}
-
 .div-img {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.9);
@@ -47,12 +108,7 @@ img {
   text-transform: uppercase;
 }
 
-.padding-l-r-b-10 {
-  padding: 0 10px 10px 10px;
-}
-
 .img_container {
-  position: relative;
   padding-bottom: 10px;
 }
 
@@ -86,12 +142,12 @@ img {
   border: none;
 }
 
-.col-gap-10 {
-  column-gap: 10px;
+.col-gap-5 {
+  column-gap: 5px;
 }
 
-.d-flex {
-  display: flex;
+.col-gap-10 {
+  column-gap: 10px;
 }
 
 .b-top-4 {
@@ -107,24 +163,8 @@ img {
   margin-top: -10px;
 }
 
-.margin-top-10 {
-  margin-top: 10px;
-}
-
 .more-stories-text p {
   margin-top: 5px;
-}
-
-.padding-top-10 {
-  padding-top: 10px;
-}
-
-.padding-bottom-12 {
-  padding-bottom: 12px;
-}
-
-.padding-bottom-4 {
-  padding-bottom: 4px;
 }
 
 .card-right-pic img {
@@ -146,6 +186,10 @@ img {
 
 .card-title {
   font: bold 23px/25px "Roboto Condensed", sans-serif;
+}
+
+.card-title-2 {
+  font: bold 18px/21px "Roboto Condensed", sans-serif;
 }
 
 .card-right-text2 {
@@ -190,10 +234,6 @@ img {
   font-size: 1.1rem;
 }
 
-.wrapper {
-  position: relative;
-}
-
 .decoration {
   width: 32px;
   height: 50px;
@@ -201,7 +241,6 @@ img {
   color: #d6d6d6;
   background-color: black;
   border-radius: 50%;
-  position: relative;
   z-index: 2;
   font: bold 14px/32px "Roboto Condensed", sans-serif;
 }
@@ -230,10 +269,6 @@ img {
   z-index: 1;
 }
 
-.margin-10 {
-  margin-top: 20px;
-}
-
 .line-height {
   line-height: 2.2rem;
 }
@@ -252,10 +287,6 @@ img {
   color: #036cbd;
 }
 
-.margin-top-5 {
-  margin-top: 5px;
-}
-
 .p-bg-c {
   background-color: #f72210;
 }
@@ -269,16 +300,14 @@ img {
   color: #fff;
 }
 
+.rounded-pill:hover {
+  background-color: #ffe400;
+  text-decoration: none;
+  color: #666;
+}
+
 .border-1 {
   border-bottom: 2px solid #f4f5f6;
-}
-
-.margin-bottom-20 {
-  margin-bottom: 20px;
-}
-
-.sec-one-col3-img {
-  position: relative;
 }
 
 .sign-up {
@@ -289,18 +318,17 @@ img {
   padding: 20px;
 }
 
-.padding-5 {
-  padding: 5px;
-}
-
 .img-icon {
   flex: none;
   display: block;
   width: 29px;
   height: 28px;
-  background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain
-    no-repeat #f72210;
+  background: url("../img/svg0.svg") center/contain no-repeat #f72210;
   margin-right: 10px;
+}
+
+.newletter-text p {
+  font: 300 15px/21px "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .sign-up .d-flex p {
@@ -348,27 +376,20 @@ img {
   padding-top: 10px;
 }
 
-/* section two in the magazine */
+/* Section two in the magazine */
 
 .magazine {
   font: bold 19px/19px "Roboto Condensed", sans-serif;
   margin-bottom: 15px;
-  text-transform: uppercase;
-  /* border-bottom: 1px solid #d9d9d9; */
   padding-bottom: 8px;
   justify-content: center;
 }
 
-.magazine div {
+.magazine div,
+.magazine h3 {
   align-self: center;
-}
-
-.self-a-center {
-  align-self: center;
-}
-
-.margin-top-25 {
-  margin-top: 25px;
+  font: bold 19px/19px "Roboto Condensed", sans-serif;
+  margin: 0 5px;
 }
 
 .magazine-footer-div {
@@ -389,18 +410,6 @@ img {
   font: bold 16px/19px "Roboto Condensed", sans-serif;
 }
 
-.img-div {
-  height: 294px;
-}
-
-.img-div2 {
-  height: 320px;
-}
-
-.img-h {
-  height: 100%;
-}
-
 .subscribe {
   background-color: #f4f5f6;
   display: block;
@@ -417,12 +426,10 @@ img {
 }
 
 .subscrib-pic {
-  /* padding-right: 90px; */
   position: relative;
 }
 
 .subscrib-text {
-  /* padding-left: 30px; */
   flex-direction: column;
   align-items: center;
   position: relative;
@@ -432,26 +439,32 @@ img {
 .sub1 {
   position: absolute;
   top: 15px;
-  left: 70px;
-}
-
-.padding-20 {
-  padding: 20px;
-}
-
-.padding-10 {
-  padding: 10px;
-}
-
-.padding-bottom-25 {
-  padding-bottom: 25px;
+  left: calc(50% - 50px);
 }
 
 .newletter-pic {
   background: url("../img/bg-news.png") center center / cover no-repeat;
 }
 
-/* footer section  */
+.news-l-p {
+  font: 300 15px/21px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.newsletter-form {
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  background: url(../img/sign-up.svg) center / 108px no-repeat;
+  background-color: #f61602;
+  border-radius: 5px;
+  padding: 18px;
+  margin-top: 8px;
+}
+
+/* footer section */
 
 .band {
   display: block;
@@ -469,7 +482,11 @@ img {
   color: #666;
 }
 
-.footer-links a {
+.border-right-1 {
+  border-right: 1px solid #d9d9d9;
+}
+
+.footer-links .border-right-1 {
   padding-top: 10px;
   font-size: 14px;
   line-height: 2px;
@@ -478,17 +495,20 @@ img {
   margin-top: 13px;
 }
 
-.border-right-1 {
-  border-right: 1px solid #d9d9d9;
-}
-
-.footer-links-2 a {
+.footer-links-2 .border-right-1 {
   line-height: 2px;
   margin-bottom: 10px;
   margin-top: -2px;
 }
 
 /* MEDIA QUERY */
+
+@media (max-width: 767px) {
+  .newletter-text {
+    text-align: center;
+  }
+}
+
 @media (min-width: 768px) {
   .subscribe {
     background-color: #f4f5f6;
@@ -506,7 +526,7 @@ img {
   }
 
   .subscrib-pic {
-    padding-right: 90px;
+    padding-right: 80px;
     position: relative;
   }
 
@@ -515,5 +535,32 @@ img {
     align-items: flex-start;
     position: relative;
     margin-top: 0;
+  }
+
+  .fa-bars,
+  .fa-user {
+    font-size: 30px;
+  }
+
+  .btn-f-l {
+    font-size: 13px;
+  }
+
+  .sticky-content {
+    position: sticky;
+    bottom: 0;
+    align-self: flex-end;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-middle img {
+    width: 320px;
+    align-self: center;
+  }
+
+  .first-nav {
+    height: 95px;
+    padding: 20px 10px 15px;
   }
 }
